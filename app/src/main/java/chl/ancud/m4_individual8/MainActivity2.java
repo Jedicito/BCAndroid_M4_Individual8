@@ -16,6 +16,7 @@ public class MainActivity2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Log.d("Logeos de Metodos", "onCreate Actividad 2");
         setContentView(R.layout.activity_main2);
 
         initListeners();
@@ -31,8 +32,9 @@ public class MainActivity2 extends AppCompatActivity {
         btn_primeraActividad.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent mainActivity = new Intent(MainActivity2.this, MainActivity.class);
-                startActivity(mainActivity);
+               /* Intent mainActivity = new Intent(MainActivity2.this, MainActivity.class);
+                startActivity(mainActivity);*/
+                finish();
 
             }
         });
@@ -52,5 +54,42 @@ public class MainActivity2 extends AppCompatActivity {
                 Log.d(TAG, abrirPagina.resolveActivity(getPackageManager()).toString());
             }
         });
+    }
+
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Log.d("Logeos de Metodos", "onStart Actividad 2");
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        Log.d("Logeos de Metodos", "onRestart Actividad 2");
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.d("Logeos de Metodos", "onResume Actividad 2");
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.d("Logeos de Metodos", "onPause Actividad 2");
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.d("Logeos de Metodos", "onStop Actividad 2");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.d("Logeos de Metodos", "onDestroy Actividad 2");
     }
 }
