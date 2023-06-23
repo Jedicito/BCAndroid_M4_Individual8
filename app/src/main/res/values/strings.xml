@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">M4_Individual8</string>
+    <string name="btn_segundaActividad">Ir a la Segunda Actividad</string>
+    <string name="Hola">¡Hola!</string>
+    <string name="actividad2">Segunda Actividad</string>
+    <string name="irPrimera">Ir a la Primera Actividad</string>
+    <string name="abrirExplorador">Abrir Explorador</string>
+</resources>
